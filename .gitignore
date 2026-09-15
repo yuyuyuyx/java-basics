@@ -1,3 +1,4 @@
 .vscode/
 .vscode-server/
 *.class
+.deep-copilot/
