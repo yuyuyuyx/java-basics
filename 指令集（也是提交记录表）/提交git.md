@@ -23,6 +23,12 @@ git add .
 git commit -m "type: “学习换行"
 git push
 
+5.求和
+git add .
+git commit -m "feat: 完成累加/累乘练习与九九乘法表嵌套循环"
+git push
+
+
 
 
 }
