@@ -13,6 +13,12 @@ git add .
 git commit -m "type: continue，else if作为重点以后处理"
 git push
 
+3.循环重复跳跃
+git add .
+git commit -m "type: 看注释"
+git push
+
+
 }
 
 2
