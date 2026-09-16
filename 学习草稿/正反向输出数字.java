@@ -19,3 +19,8 @@ public class 正反向输出数字 {
         System.out.println(); 
     }
 }
+/*两个同时进行 
+for (int i = 1, j = 5; i <= 5; i++, j--) {
+    System.out.print(i + " ");   // 正向
+    System.out.print(j + "\t");  // 反向，用制表符 \t 对齐
+}*/ 
