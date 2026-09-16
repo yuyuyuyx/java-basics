@@ -11,7 +11,7 @@ git push
     2.计算机
 git add .
 git commit -m "type: continue，else if作为重点以后处理"
-git pus
+git push
 
 }
 
