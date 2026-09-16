@@ -18,7 +18,13 @@ git add .
 git commit -m "type: 看注释"
 git push
 
+4.正反向输出数字
+git add .
+git commit -m "type: “学习换行"
+git push
+
+
 
 }
 
-2
+
