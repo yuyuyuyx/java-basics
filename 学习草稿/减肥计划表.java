@@ -27,7 +27,7 @@ public class 减肥计划表 {
                 System.out.println("爬山");
                 break;
 
-            default:
+            default://如果输入八8也会触发，一个小bug
                 System.out.println("好好吃一顿");
                 break;
         }
