@@ -35,4 +35,13 @@ git add .
 git commit -m "type: "注释"
 git push
 
+斐波那契数列
+git add .
+git commit -m ："缓存算法"
+git push
+
+满足条件的数字
+git add .
+git commit -m "return可以停止程序"
+git push
 
