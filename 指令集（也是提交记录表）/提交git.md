@@ -27,10 +27,12 @@ git push
 git add .
 git commit -m "feat: 完成累加/累乘练习与九九乘法表嵌套循环"
 git push
-
-
-
-
 }
+
+9.17
+数列之和
+git add .
+git commit -m "type: "注释"
+git push
 
 
