@@ -61,6 +61,10 @@ git commit -m "写注释防止日后看不懂"
 git push
 
 
+数位求和
+git add .
+git commit -m "看注释，这是盲区"
+git push
 
 
 
