@@ -45,3 +45,8 @@ git add .
 git commit -m "return可以停止程序"
 git push
 
+模拟跳跃while版本
+git add .
+git commit -m "注意循环从0/1开始"
+git push
+
