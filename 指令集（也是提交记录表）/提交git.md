@@ -71,6 +71,7 @@ git add .
 git commit -m "看注释，解释了do while的语法特点"
 git push
 
+9.18
 血条
 git add .
 git commit -m "解决了负数数据误入的问题"
@@ -80,6 +81,13 @@ git push
 git add .
 git commit -m "记思路"
 git push
+
+逢七过
+git add .
+git commit -m "记思路"
+git push
+
+
 
 
 
