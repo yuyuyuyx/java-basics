@@ -97,6 +97,11 @@ git add .
 git commit -m "看注释有随机数生成方法+现实情况bug避免"
 git push
 
+打印特殊符号
+git add .
+git commit -m "矩阵换行需要在外层换，内层只负责打印"
+git push
+
 
 
 
