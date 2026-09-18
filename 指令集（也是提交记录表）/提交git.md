@@ -76,6 +76,12 @@ git add .
 git commit -m "解决了负数数据误入的问题"
 git push
 
+判断整数是不是质数
+git add .
+git commit -m "记思路"
+git push
+
+
 
 
 
