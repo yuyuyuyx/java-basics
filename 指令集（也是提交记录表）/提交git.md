@@ -92,6 +92,13 @@ git add .
 git commit -m "记思路+continue要反向思维"
 git push
 
+模拟猜数字
+git add .
+git commit -m "看注释有随机数生成方法+现实情况bug避免"
+git push
+
+
+
 
 
 
