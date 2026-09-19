@@ -36,3 +36,4 @@ public class 判断整数是不是质数 {
  * 
  * 核心口诀：默认是好人（isPrime = true），找到坏人立刻推翻（isPrime = false），最后看结论。
  */
+
