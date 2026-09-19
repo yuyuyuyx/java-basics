@@ -16,7 +16,7 @@ public class 打印特殊符号 {
                 //行循环到2，列也循环到2
                 System.out.print("*");//print不换行
 
-            }
+            }  
             System.out.println();//换行记得在外层换
         }
         //打印5*5的*图标组成的倒三角形
