@@ -1,6 +1,6 @@
 package 学习草稿;
 
-import java.util.Scanner;
+import java.util.Scanner;//
 
 public class 循环重复跳跃 {
     public static void jump(int n) {// 类似C语言的定义函数，前面写一堆，后面直接调用，相当于处理器
