@@ -36,11 +36,15 @@ public class 计算快递邮费 {
     public static double price(double weightfinall) {// 把重量传进去算
         double exceed = weightfinall - 1;
         double price = 0;// 需要事先定义，不然return传不出去
-        if (exceed < 0) {
-            exceed = 1;
+        if (exceed > 0 && exceed < 1) {//多了0.几的情况
+            exceed = Math.ceil(exceed);// 向上取整，
             price = 10;
 
-        } else if (exceed == 0) {
+        } else if (exceed < 0) {//不足1kg
+            exceed = 0;
+            price = 10;
+
+        } else if (exceed == 0) {//刚好1kg
             price = 10;
         } else if (exceed <= 5 && exceed >= 1) {
             price = 10 + exceed * 2;
