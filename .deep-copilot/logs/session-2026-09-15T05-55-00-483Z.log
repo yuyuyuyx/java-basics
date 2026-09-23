@@ -1,6 +1,0 @@
-[2026-09-15T05:55:00.483Z] [INIT] Deep Copilot debug log started. file=/home/ycx/projects/Java基础/.deep-copilot/logs/session-2026-09-15T05-55-00-483Z.log
-[2026-09-15T05:55:00.483Z] [ACTIVATE] {"version":"0.43.1"}
-[2026-09-15T05:55:00.484Z] [PROVIDERS_LOADED] {"count":4,"ids":["anthropic","custom","deepseek","openai"]}
-[2026-09-15T05:55:00.484Z] [TERMINAL_MONITOR_STARTED] {}
-[2026-09-15T05:55:00.484Z] [STATUSBAR_REGISTERED] {"id":"deepseekAgent.statusBar"}
-[2026-09-15T05:55:00.487Z] [INLINE_COMPLETION_REGISTERED]
