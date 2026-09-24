@@ -1,4 +1,4 @@
-package 学习草稿.条件判断与循环.IF与ELES;
+package 学习草稿.条件判断与循环.FOR循环.IF与ELES;
 
 public class 逢七过 {
     public static void main(String[] args) {

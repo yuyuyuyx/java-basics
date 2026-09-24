@@ -1,4 +1,4 @@
-package 学习草稿.条件判断与循环.IF与ELES;
+package 学习草稿.条件判断与循环.FOR循环.IF与ELES;
 
 import java.util.Scanner;
 
