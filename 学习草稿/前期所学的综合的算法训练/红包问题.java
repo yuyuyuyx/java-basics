@@ -5,26 +5,8 @@ import java.util.Scanner;
 
 public class 红包问题 {
 
-    public static double hongbao(double sum) {// 方法一
-        Random r = new Random();// 随机器
-        double Amoney = r.nextDouble(sum) + 1;// 开始生成（不能超过1000块）
-        while (sum >= 0) {// 保证资金大于等于0
-            sum -= Amoney;// 削减总金额
-
-        }
-
-        return Amoney;// 寄出红包
-
-    }
-    
-
     public static void main(String[] args) {
         // 一个红包生成器
-        // main：
-        // 1.设置两个变量，用来表示红包总额和个数
-        // 方法一：内部程序
-
-        
 
         System.out.println("（温馨提示:领红包的人数和红包总数一样多）");
         Scanner sc = new Scanner(System.in);
@@ -32,6 +14,31 @@ public class 红包问题 {
         double sum = sc.nextDouble();
         System.out.println("请设置红包总数");
         int number = sc.nextInt();
+        Random r = new Random();
+
+        for (int i = 1; i <= number; i++) {// 保证每个人都能领钱，循环number次，全都有份
+            double money;// 假设每个人都没领钱
+            if (sum > 0) { // 只要还有钱就发
+                // 1. 计算随机上限（给后面的人留 1 元保底）
+                double maxAmount = sum - (number - i) * 1.0;
+
+                // 2. 在 [1, maxAmount] 之间随机
+                money = r.nextDouble(maxAmount) + 1;
+
+                // 3. 扣钱！
+                sum -= money;
+
+                // 4. 打印（用 Math.round 保留两位小数）
+                System.out.println("第" + i + "个人分到了 " + Math.round(money * 100) / 100.0 + " 元");
+
+            } else {
+                // 如果前面的运气太好把钱分完了，后面的人保底 0 元
+                System.out.println("第" + i + "个人没抢到红包");
+            }
+
+    
+
+        }
 
     }
 }
