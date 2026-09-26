@@ -34,7 +34,7 @@ public class 二路回归并寻找中位数 {
             a3++;//填充完最后一个元素的时候，a3等于8，再++变成9
         }
         System.out.println(Arrays.toString(arr3));
-        if (a3 % 2 != 0) {// 由于从0开始，最大序列为奇数的元素数量为偶数，所以这是偶数元素数量数组
+        if (a3 % 2 == 0) {// 由于从0开始，最大序列为奇数的元素数量为偶数，所以这是偶数元素数量数组
             double midnumber = arr3[a3 / 2];
             System.out.println(midnumber);
 
