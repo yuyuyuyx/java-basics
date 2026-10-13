@@ -6,25 +6,34 @@ public class 查找数据 {
 
     // 不返回数组了，直接在方法里把结果打印出来
     public static void findAndPrint(int[] array, int target) {
-        boolean isFound = false; // 记录到底有没有找到
+        boolean isFound = false;
+        int left = 0;
+        int right = array.length - 1;
 
-        System.out.print("该数字的下标分别是：");
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == target) {
-                System.out.print(i + " ");
-                isFound = true;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            if (array[mid] == target) {
+                System.out.println("找到了，下标为：" + mid);
+                isFound = true; // 【补上】标记找到了！
+                break; // 找到了就退出循环
+            } else if (array[mid] < target) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
             }
+
+            // 【移除】原来的 if(!isFound) 绝不能写在这里！
         }
 
-        // 如果循环结束了还没找到，就打印没找到
+        // 【移到这里】循环彻底结束，代表二分查找真的没找到
         if (!isFound) {
-            System.out.print("没有该数字");
+            System.out.println("没有该数字");
         }
-        System.out.println(); // 换行，让终端好看一点
     }
 
     public static void main(String[] args) {
-        int[] array = { 33, 5, 22, 44, 55, 33 };
+        int[] array = { 5, 22, 33, 33, 44, 55 };
         System.out.println("请输入一个整数:");
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
