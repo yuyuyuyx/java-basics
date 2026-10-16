@@ -1,4 +1,4 @@
-package 学习草稿.面向对象.学生1;
+package 学习草稿.面向对象基础.学生1;
 
 public class student1 {
     private String name;

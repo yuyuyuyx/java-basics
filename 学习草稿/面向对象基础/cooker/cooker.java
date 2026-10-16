@@ -1,4 +1,4 @@
-package 学习草稿.面向对象.cooker;
+package 学习草稿.面向对象基础.cooker;
 
 public class cooker {
     String name;

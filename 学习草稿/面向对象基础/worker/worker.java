@@ -1,4 +1,4 @@
-package 学习草稿.面向对象.worker;
+package 学习草稿.面向对象基础.worker;
 
 public class worker {
     String name;

@@ -1,4 +1,4 @@
-package 学习草稿.面向对象.student;
+package 学习草稿.面向对象基础.student;
 
 public class student_test {
     public static void main(String[] args) {

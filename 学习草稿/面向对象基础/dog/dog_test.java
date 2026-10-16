@@ -1,4 +1,4 @@
-package 学习草稿.面向对象.dog;
+package 学习草稿.面向对象基础.dog;
 
 public class dog_test {// 定义一个类,用来记录不同狗的个体数据
     public static void main(String[] args) {

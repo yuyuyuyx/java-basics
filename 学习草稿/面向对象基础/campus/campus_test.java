@@ -1,4 +1,4 @@
-package 学习草稿.面向对象.campus;
+package 学习草稿.面向对象基础.campus;
 
 
 public class campus_test {
