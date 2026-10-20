@@ -1,4 +1,4 @@
-package 学习草稿.面向对象进阶.枚举;
+package 学习草稿.面向对象进阶.枚举.电商;
 
 public class order_test {
     public static void main(String[] args) {
