@@ -1,4 +1,4 @@
-package 学习草稿.面向对象高级.继承;
+package 学习草稿.面向对象高级.继承.初步试验;
 
 public class father {
     private String name;
