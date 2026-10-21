@@ -1,6 +1,7 @@
 package 学习草稿.面向对象高级.继承.作业一;
 
-public class com {
+public abstract class com {
+    //abstract效果是禁止：“ new：new com(...) ”直接编译不通过。
     private int id;
     private String name;
     private double salary;
@@ -39,7 +40,7 @@ public class com {
 
     }
 
-    public void setsalary() {
+    public void setsalary(double salary) {
         this.salary = salary;
     }
 
@@ -58,4 +59,7 @@ public class com {
     public void eat(){
         System.out.println("吃米饭");
     }
+    //工作新定义方法
+    public abstract void work();// 父类只声明"要干活"
+    // 只有声明，没有方法体，连 {} 都没有
 }

@@ -12,7 +12,8 @@ public class manager extends com {
         this.managerBonus = managerBonus;
     }
 
-    public void manage() {
+    @Override
+    public void work() {
         System.out.println("管理其他人");
     }
 

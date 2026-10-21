@@ -4,13 +4,13 @@ public class test {
 
     public static void main(String[] args) {
         // 创建角色
-        cooker person1 = new cooker("老王", 223, 5000, null);
+        com person1 = new cooker("老王", 205, 4500, null);
         System.out.println("工号：" + person1.getid() +
                 "\n" + "名字：" + person1.getname() +
                 "\n" + "工资：" + person1.getsalary() +
                 "\n" + "职业：" + person1.getjob());
         System.out.print("技能：");
-        person1.cook();
+        person1.work();
         System.out.print("现在在");
         person1.eat();
         System.out.println();
@@ -21,7 +21,7 @@ public class test {
                 "\n"+"管理奖金"+person2.getmanagerBonus()+
                 "\n" + "职业：" + person2.getjob());
         System.out.print("技能：");
-        person2.manage();
+        person2.work();
         System.out.print("现在在");
         person2.eat();
 
