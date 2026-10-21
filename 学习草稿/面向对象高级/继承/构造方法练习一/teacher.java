@@ -1,4 +1,4 @@
-package 学习草稿.面向对象高级.继承.构造方法练习;
+package 学习草稿.面向对象高级.继承.构造方法练习一;
 
 public class teacher extends com {
     String subject;
