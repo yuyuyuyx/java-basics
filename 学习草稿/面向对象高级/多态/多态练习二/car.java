@@ -1,6 +1,6 @@
 package 学习草稿.面向对象高级.多态.多态练习二;
 
-public class car extends com {
+public class car extends vehicle {
     public car() {
 
     }

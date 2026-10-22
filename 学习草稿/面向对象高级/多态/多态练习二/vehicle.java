@@ -1,24 +1,24 @@
 package 学习草稿.面向对象高级.多态.多态练习二;
 
-public abstract class com {
-    private String grand;
+public abstract class vehicle {
+    private String brand;
     private double speed;
 
-    public com() {
+    public vehicle() {
 
     }
 
-    public com(String grand, double speed) {
-        this.grand = grand;
+    public vehicle(String brand, double speed) {
+        this.brand = brand;
         this.speed = speed;
     }
 
-    public void setgrand(String grand) {
-        this.grand = grand;
+    public void setgrand(String brand) {
+        this.brand = brand;
     }
 
     public String getgrand() {
-        return grand;
+        return brand;
     }
 
     public void setspeed(double speed) {
