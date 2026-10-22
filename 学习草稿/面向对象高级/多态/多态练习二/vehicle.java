@@ -13,11 +13,11 @@ public abstract class vehicle {
         this.speed = speed;
     }
 
-    public void setgrand(String brand) {
+    public void setbrand(String brand) {
         this.brand = brand;
     }
 
-    public String getgrand() {
+    public String getbrand() {
         return brand;
     }
 

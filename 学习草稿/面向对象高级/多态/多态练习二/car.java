@@ -5,17 +5,17 @@ public class car extends vehicle {
 
     }
 
-    public car(String grand, double speed) {
-        super(grand, speed);
+    public car(String brand, double speed) {
+        super(brand, speed);
 
     }
 
     public void honk() {
-        System.out.println(getgrand()+"汽车鸣笛");
+        System.out.println(getbrand()+"汽车鸣笛");
     }
     @Override
     public void move() {
-        System.out.println(getgrand()+"汽车以"+getspeed()+"移动");
+        System.out.println(getbrand()+"汽车以"+getspeed()+"移动");
         
     }
 
