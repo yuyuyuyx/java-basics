@@ -17,6 +17,7 @@ public class test {
             // 多态：编译看左边(com)，运行看右边(实际 new 的子类)
             System.out.print("工作内容是：");
             index.work();
+            //想让每个子类的方法体现出来，直接按倒数两行的做法即可，不需要设置内层循环去遍历
         }
 
     }
