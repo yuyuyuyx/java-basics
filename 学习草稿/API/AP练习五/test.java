@@ -1,4 +1,4 @@
-package 学习草稿.面向对象高级.API.AP练习五;
+package 学习草稿.API.AP练习五;
 
 import java.util.Scanner;
 

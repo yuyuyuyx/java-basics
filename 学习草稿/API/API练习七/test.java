@@ -1,4 +1,4 @@
-package 学习草稿.面向对象高级.API.API练习七;
+package 学习草稿.API.API练习七;
 
 import java.util.Arrays;
 

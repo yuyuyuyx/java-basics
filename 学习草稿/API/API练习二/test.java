@@ -1,4 +1,4 @@
-package 学习草稿.面向对象高级.API.API练习二;
+package 学习草稿.API.API练习二;
 
 public class test {
     public static void main(String[] args) {
