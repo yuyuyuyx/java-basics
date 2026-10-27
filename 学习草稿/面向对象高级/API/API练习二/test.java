@@ -22,5 +22,9 @@ public class test {
         };
         String s4 =new String(h);
         System.out.println(s4);//字节数组也行
+
+        //直接赋值
+        String a ="a";
+        //直接赋值比new方法要省内存
     }
 }
