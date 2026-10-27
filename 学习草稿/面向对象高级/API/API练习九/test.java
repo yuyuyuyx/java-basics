@@ -27,6 +27,8 @@ public class test {
 
         }
         System.out.println(fuck);
+        String word = "a b c ";
+        System.out.println(word.trim());
 
     }
 }
