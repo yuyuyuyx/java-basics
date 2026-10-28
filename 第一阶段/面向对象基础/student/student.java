@@ -1,0 +1,9 @@
+package 第一阶段.面向对象基础.student;
+
+public class student {
+    String name;
+    String gender;
+    int age;
+    double weight;//单位千克
+
+}
