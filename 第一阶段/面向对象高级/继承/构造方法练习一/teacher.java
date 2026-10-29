@@ -8,8 +8,9 @@ public class teacher extends com {
     }
 
     public teacher(String name, int age) {
-        System.out.println("teach");
         super(name, age);
+        System.out.println("teach");
+
         this.subject = subject;
     }
 }
