@@ -1,4 +1,12 @@
+# 编译产物
+*.class
+out/
+
+# IntelliJ IDEA 的本机配置
+.idea/
+*.iml
+
+# 编辑器与插件
 .vscode/
 .vscode-server/
-*.class
 .deep-copilot/

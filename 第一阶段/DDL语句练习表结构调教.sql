@@ -11,6 +11,7 @@ CREATE DATABASE second;
 #以上删除了三个废库
 #use ycx_study;#使用数据库
 SELECT DATABASE();
+CREATE DATABASE IF NOT EXISTS ycx_study;
 USE ycx_study;
 SELECT DATABASE();
 #CREATE DATABASE test_door；
