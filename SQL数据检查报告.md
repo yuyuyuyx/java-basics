@@ -238,6 +238,8 @@
 | `DDL语句练习表结构调教.sql`（3.5 KB） | 建 `second` 库、`ycx_study.student` / `one`、`员工信息表`，随后 `ALTER` 改名 `employee` 再 `DROP` | `ycx_study`（+ 一个已消失的 `second` 库） | ⚠️ 会重建两张空表；`second` 库当前不存在 |
 | `02_DML语句练习_数据操作.sql`（1.2 KB） | 往 `员工信息表` 插数据 | 这张表**已被 DDL 脚本改名并删除** | ❌ 直接跑必然 `ERROR 1146 (42S02): Table '员工信息表' doesn't exist` |
 
+> 注：上表中的 4 个脚本已于同日整理进 `sql/` 目录：`01_ddl.sql`、`02_dql.sql`、`03_dcl.sql`；`02_DML` 因引用的表已不存在而被删除。
+
 也就是说：`shop_practice` 是 `DQL练习.sql` 的完整产物，数据与脚本逐行对得上；而 `02_DML` 依赖 `DDL` 脚本的**中间状态**，两个脚本分开跑没有意义。
 
 ---
