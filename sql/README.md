@@ -5,7 +5,7 @@
 | 文件 | 作用 | 建的库 |
 |---|---|---|
 | `01_ddl.sql` | 建表、`ALTER` 改表、`DROP` 删表 | `second`、`ycx_study` |
-| `02_dql.sql` | 电商练习库：7 张表 + 98 行演示数据，多表查询素材 | `shop_practice` |
+| `02_dql.sql` | 电商练习库：6 张表 + 98 行演示数据，多表查询素材 | `shop_practice` |
 | `03_dcl.sql` | 建表 + 增删改查示例 + `CREATE USER` / `GRANT` | `practice_db` |
 
 ## 怎么跑

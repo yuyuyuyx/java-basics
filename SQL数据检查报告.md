@@ -20,11 +20,11 @@
 | 明显的数据错误 | 1 条孤儿记录（`ycx_study.Address.personId=3`） |
 | 空表 | 2 张（`ycx_study.one`、`ycx_study.student`） |
 
-**一句话**：`shop_practice` 是一个结构完整、数据自洽的电商练习库（7 表 / 98 行 / 7 条外键，22 张订单的金额与明细一分不差）；`practice_db` 是语法练习库（3 表 / 11 行 / 无外键）；`ycx_study` 是零散测试库（5 表 / 5 行 / 几乎没有约束）。
+**一句话**：`shop_practice` 是一个结构完整、数据自洽的电商练习库（6 表 / 98 行 / 7 条外键，22 张订单的金额与明细一分不差）；`practice_db` 是语法练习库（3 表 / 11 行 / 无外键）；`ycx_study` 是零散测试库（5 表 / 5 行 / 几乎没有约束）。
 
 | 库 | 表数 | 行数 | 排序规则 | 定位 |
 |---|---:|---:|---|---|
-| `shop_practice` | 7 | 98 | `utf8mb4_general_ci` | 电商业务综合练习（由 `DQL练习.sql` 生成） |
+| `shop_practice` | 6 | 98 | `utf8mb4_general_ci` | 电商业务综合练习（由 `DQL练习.sql` 生成） |
 | `practice_db` | 3 | 11 | `utf8mb4_0900_ai_ci` | 单表增删改查、DCL 语法练习 |
 | `ycx_study` | 5 | 5 | `utf8mb4_0900_ai_ci` | 建表/改表、LeetCode 数据库题的零散表 |
 
@@ -70,7 +70,8 @@
 | `products` | 16 | `product_id` | `category_id` → `categories` | 商品，含上下架状态 |
 | `orders` | 22 | `order_id` | `customer_id`、`employee_id` | 订单头，订单号唯一 |
 | `order_items` | 37 | `item_id` | `order_id`（级联删）、`product_id` | 订单明细，成交单价快照 |
-| — | — | — | 共 **7** 条 | 全部有索引支撑 |
+
+共 6 张表、7 条外键，外键列全部有索引支撑。
 
 ### 1.3 字段字典（核心四表）
 
@@ -233,7 +234,7 @@
 
 | 脚本 | 实际作用 | 对应库/表 | 当前能否原样重跑 |
 |---|---|---|---|
-| `DQL练习.sql`（16.3 KB） | 建库 + 7 张表 + 全量演示数据（8/10/5/16/22/37） | `shop_practice` 整个库 | ❌ 第 7 行 `CREATE DATABASE shop_practice` 没有 `IF NOT EXISTS`，第二次跑会报库已存在 |
+| `DQL练习.sql`（16.3 KB） | 建库 + 6 张表 + 全量演示数据（8/10/5/16/22/37） | `shop_practice` 整个库 | ❌ 第 7 行 `CREATE DATABASE shop_practice` 没有 `IF NOT EXISTS`，第二次跑会报库已存在 |
 | `DCL用户访问数据.sql`（3.8 KB） | 建 `practice_db` + `employees` / `orders` / `sys_user` + 示例数据 | `practice_db` | ✅ 有 `IF NOT EXISTS`，但会重复插入 |
 | `DDL语句练习表结构调教.sql`（3.5 KB） | 建 `second` 库、`ycx_study.student` / `one`、`员工信息表`，随后 `ALTER` 改名 `employee` 再 `DROP` | `ycx_study`（+ 一个已消失的 `second` 库） | ⚠️ 会重建两张空表；`second` 库当前不存在 |
 | `02_DML语句练习_数据操作.sql`（1.2 KB） | 往 `员工信息表` 插数据 | 这张表**已被 DDL 脚本改名并删除** | ❌ 直接跑必然 `ERROR 1146 (42S02): Table '员工信息表' doesn't exist` |
