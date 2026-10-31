@@ -44,3 +44,6 @@ WHERE emp_no = 'E001';
 DELETE
 FROM 员工信息表
 WHERE id = 49;
+
+
+
